@@ -1,6 +1,6 @@
 @import url("http://fonts.googleapis.com/css?family=Josefin+Sans");
 #derp {
-  height: 338px;
+  height: 318px;
 }
 body {
   background-color: #fff;
@@ -19,16 +19,17 @@ html {
 }
 #title-text {
   font-family: "Josefin Sans", cursive;
-  margin-top: 100px;
+  margin-top: 80px;
   font-size: 800%;
   color: #616161;
 }
 #top-text {
   color: #616161;
   font-family: "Josefin Sans", cursive;
-  font-size: 15px;
+  font-size: 34px;
   height: 40px;
-  margin-top: -2px;
+  margin-left: -10px;
+  margin-top: -30px;
 }
 #circles {
   margin-left: auto;
@@ -67,24 +68,24 @@ html {
   width: 100%;
   height: 100%;
   background-color: #f44336;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 #media {
   width: 100%;
   height: 100%;
   background-color: #3f51b5;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 #blog {
   width: 100%;
   height: 100%;
   background-color: #ffeb3b;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 #about-text {
   color: #fff;
   font-family: "Josefin Sans", cursive;
-  font-size: 15px;
+  font-size: 30px;
 }
 #mobile-space {
   width: 100%;
@@ -103,11 +104,11 @@ html {
   display: none;
 }
 a {
-  width: 42px;
-  height: 42px;
+  width: 80px;
+  height: 80px;
   display: inline-block;
   border-radius: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -117,7 +118,7 @@ a {
   border: 1px solid transparent;
 }
 a i {
-  font-size: 38px !important;
+  font-size: 75px !important;
   margin-top: 2px;
   color: #fff;
   -webkit-transition: all 0.5s ease;
@@ -127,13 +128,13 @@ a i {
   transition: all 0.5s ease;
 }
 a img {
-  width: 42px;
-  height: 42px;
+  width: 80px;
+  height: 80px;
   display: inline-block;
   margin-top: -2px;
   margin-bottom: -2px;
   margin-left: -2px;
-  border-radius: 42px;
+  border-radius: 80px;
 }
 a:hover {
   background-color: #fff;
@@ -160,12 +161,13 @@ a:hover i {
   margin-top: 25px;
   color: #fff;
 }
-.fa-twitter {
-  margin-top: 1px;
-}
-.fa-linkedin {
-  font-size: 33px !important;
-}
 a#github img {
   padding: 1px;
+}
+.fa-linkedin {
+  font-size: 65px !important;
+}
+.fa-facebook,
+.fa-linkedin {
+  margin-top: 5px;
 }

@@ -7,25 +7,25 @@ Red = #F44336//#EF5350
 Yellow =#3F51B5//#42A5F5 #FFEB3B//#FFEE58
 Blue =  #FFEB3B//#FFEE58
 Grey =#616161
-
-
+topTextMargin = -10px
+linkMargin = 25px
 titleFontSize = 800%
 titleHeight = 114px
 titleColor = Grey
 bg = White
 contentText = White
 fullScreen = 100%
-marginTop = 100px
+marginTop = 80px
 circleRadius = 80px
 circleBorderRadius = 40px
 shadow = 0px 0px 2px 2px Grey
 arrow = 74px
-contentFontSize = 15px
-linkSize = 42px
+contentFontSize = 34px
+linkSize = 80px
 transitionTime = .5s
 circleMarginBottom = 4px
 topTextHeight = 40px
-partitionPadding = 40px
+partitionPadding = 30px
 Derp = marginTop + titleHeight + circleRadius + topTextHeight + circleMarginBottom
 #derp
   height Derp
@@ -75,7 +75,8 @@ html
   font-family favFont
   font-size contentFontSize
   height topTextHeight
-  margin-top -2px
+  margin-left topTextMargin
+  margin-top -30px
 #circles
   centerContent()
   margin-bottom circleMarginBottom
@@ -108,7 +109,7 @@ html
   color contentText
   // margin-top 10px
   font-family favFont
-  font-size contentFontSize
+  font-size contentFontSize - 4px
 #mobile-space
   width fullScreen
   height 100px
@@ -123,12 +124,12 @@ html
   display none
 a 
   customCircle(linkSize)
-  margin-bottom 30px
+  margin-bottom linkMargin
   transition()
   padding 1px
   border 1px solid transparent
   i
-    font-size 38px !important
+    font-size circleRadius - 5px !important
     margin-top 2px
     color White
     transition()
@@ -160,10 +161,10 @@ a
     font-size 30px
     margin-top 25px
     color White
-.fa-twitter
-  margin-top 1px
-.fa-linkedin
-  font-size 33px !important
 a#github
   img 
     padding 1px
+.fa-linkedin
+  font-size circleRadius - 15px !important
+.fa-facebook, .fa-linkedin
+  margin-top 5px
