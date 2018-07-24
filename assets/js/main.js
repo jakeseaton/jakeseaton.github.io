@@ -347,27 +347,27 @@
 							});
 
 	});
-	$("#contact-form").on("submit", function(e){
-		e.preventDefault()
-		var apiString = "https://214qa377m5.execute-api.us-east-1.amazonaws.com/prod/friends";
-		var data = {
-			name: $("#contact-name").val(),
-			email:$("#contact-email").val(),
-			description: $("#contact-message").val(),
-		}
-		$.ajax({
-		    type: 'POST',
-		    url: apiString,
-		    dataType: 'json',
-		    contentType: 'application/json',
-		    data: JSON.stringify(data),
-		    success: function () {
-		    	alert("Your message was sent!")
-		    },
-		    error: function () {
-		    	alert("There was an error.")
-		    }
-		  })
+	// $("#contact-form").on("submit", function(e){
+	// 	e.preventDefault()
+	// 	var apiString = "https://214qa377m5.execute-api.us-east-1.amazonaws.com/prod/friends";
+	// 	var data = {
+	// 		name: $("#contact-name").val(),
+	// 		email:$("#contact-email").val(),
+	// 		description: $("#contact-message").val(),
+	// 	}
+	// 	$.ajax({
+	// 	    type: 'POST',
+	// 	    url: apiString,
+	// 	    dataType: 'json',
+	// 	    contentType: 'application/json',
+	// 	    data: JSON.stringify(data),
+	// 	    success: function () {
+	// 	    	alert("Your message was sent!")
+	// 	    },
+	// 	    error: function () {
+	// 	    	alert("There was an error.")
+	// 	    }
+	// 	  })
 
-	})
+	// })
 })(jQuery);
